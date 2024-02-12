@@ -1,0 +1,203 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 242, 226);
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(254, 95, 37);
+}
+
+.hero{
+    display: flex;
+}
+
+.game-container{
+    flex: 5px;
+    position: relative;
+}
+
+.text-play{
+    position: absolute;
+    top: 8%;
+    left: 38%;
+    font-size: 34px;
+    color: firebrick;
+    text-decoration: underline;
+}
+
+.playing-btn{
+    display: flex;
+    margin-top: 150px ;
+    margin-bottom: 80px;
+}
+
+.rps-container{
+    display: flex;
+    padding: 0 40px;
+}
+
+.game-btn-rock svg{
+    height: 100%;
+    padding-top: 34px;
+    width: 100%;
+    padding-left: 7px;
+    cursor: pointer;
+}
+
+.game-btn-scissor svg{
+    height: 100%;
+    padding-top: 26px;
+    width: 100%;
+    padding-left: 12px;
+    cursor: pointer;
+}
+
+.game-btn-paper svg{
+    height: 100%;
+    padding-top: 28px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.game-btn-rock:active{
+    opacity: .9;
+    border-radius: 50%;
+}
+
+.game-btn-scissor:active{
+    opacity: .9;
+    border-radius: 50%;
+}
+
+.game-btn-paper:active{
+    opacity: .9;
+    border-radius: 50%;
+}
+
+.game-btn-rock, .game-btn-scissor, .game-btn-paper{
+    width: 200px;
+    display: flex;
+    height: 200px;
+    border: none;
+    color: white;
+    background-color: rgb(255, 242, 226);
+    align-items: center;
+}
+
+.playerActive{
+    background-color: greenyellow;
+    border-radius: 50%;
+}
+
+.botActive{
+    background-color: tomato;
+    border-radius: 50%;
+}
+
+.commonActive{
+    background-color: lightseagreen;
+    border-radius: 50%;
+}
+
+.others{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.other-game-btn{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    margin: 0 50px;
+    background-color: rgb(0, 171, 0);
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.other-game-btn:hover{
+    background-color: red;
+}
+
+.score-container{
+    flex: 1px;
+}
+
+.score-container h1{
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    color: rgb(254, 95, 37);
+}
+
+.score-title {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-top: -3%;
+    margin-left: 15%;
+}
+
+.p-style{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;    
+    margin-left: 15%;
+    text-decoration: none;
+}
+
+.result-style #js-result{
+    font-size: 40px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(254, 95, 37);
+}
+
+.score-container .rule{
+    margin-top: 16px;
+}
+
+.score-container .rule p{
+    display: inline-block;
+    font-size: 20px;
+}
+
+.rule div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rule-green{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.rule-red{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: tomato;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.rule-tie{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: lightseagreen;
+    border-radius: 50%;
+    margin-right: 30px;
+}
